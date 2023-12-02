@@ -1,0 +1,127 @@
+.wrapper {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-flow: column;
+}   
+
+main{
+   padding: var(--padding-md) var(--padding-lg);
+   color: grey;
+   font-family: Trebuchet MS;
+
+}
+
+main h1 {
+   margin-top: 2rem;
+   margin-left: 2rem;
+}
+
+table {
+   width: 100%;
+   color: grey;
+   background-color:white;
+   height:85%;
+   display: flex;
+   flex-flow: column;
+   margin-top: var(--margin-lg);
+   border-radius: var(--border-radius-md); 
+   padding: var(--padding-md);
+
+}
+
+th {
+   position: relative;
+}
+
+thead {
+   font-weight: 600;
+   border-bottom: var(--border-radius-md);
+   margin-bottom: var(--margin-md);
+   color: darkslateblue;
+}
+
+tbody {
+   overflow: auto;
+   flex-grow: 1; 
+}
+
+td, th{
+   display: flex;
+   text-align: start;
+   align-items: center;
+}
+
+th{
+   margin-right: var(--margin-sm);
+   border-radius: var(--border-radius-md);
+   font-weight: inherit;
+   font-size: inherit;
+   color: grey;
+}
+
+div .search-wrapper:hover{
+   background-color: rgba(59, 59, 59, 0.25);
+   visibility: visible; 
+}
+
+th button:hover{
+   background-color: rgba(59, 59, 59, 0.25);
+   visibility: visible; 
+}
+
+tr {
+   display: flex;
+   padding: var(--padding-sm) var(--padding-md);
+   border-bottom: 1px solid grey;
+   width: 100%;
+   box-sizing:border-box;
+}
+
+table tr td:nth-child(1) ,
+table tr th:nth-child(1) {
+   flex: 0 1 40%;
+}
+
+
+table tr td:not(:nth-child(1)) ,
+table tr th:not(:nth-child(1)){
+   flex: 0 1 20%;
+}
+
+.search-wrapper {
+   position:relative;
+   display:flex;
+   align-items: center;
+}
+
+.search-wrapper img {
+   position: absolute;
+   width: 24px;
+   height: 24px;
+   display: flex;
+   align-items: center;
+   left:130px;
+}
+
+input[type=search]{
+
+   border: none;
+   background: inherit;
+   border-radius: var(--border-radius-md);
+   padding: var(--padding-sm) var(--padding-sm) var(--padding-sm) var(--padding-md);
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+th button {
+   cursor: pointer;
+   border: none;
+   background: inherit;
+   border-radius: var(--border-radius-md);
+   padding: var(--padding-sm) var(--padding-sm) var(--padding-sm) var(--padding-md);
+   font-weight: inherit;
+   font-size: inherit;
+   color: grey;
+}
+

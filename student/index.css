@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+}
+   
+.charts {
+    display: flex;
+    flex-direction: row;
+}
+   
+#trend-graph { /*big trend graph */
+    background-color: #eee;
+    height: 100%;
+    width: 100%;
+}
+   
+#course-chart-wrapper { /* pie chart and vertical graph */
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    flex: 0 0 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+   
+#trend-chart-wrapper {
+   flex: 0 0 50%;
+   margin-top: 15px;
+   margin-bottom: 15px;       
+}
+   
+#pie-chart{
+   background-color: #eee;
+   margin-bottom: 15px;  
+}
+   
+#vertical-graph {
+   background-color: #eee;   
+}   

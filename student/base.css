@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --color-base: white;
+    --color-alt-lightest: #fafafa;
+    --color-alt-lighter: #e3e3e3;
+    --color-alt: #eee;
+    --color-alt-darker: rgba(127, 140, 141, 1);
+    --color-alt-darkest: #888;
+    --color-accent: #5973b6;
+    --color-accent-dark: #1389ea;
+    --color-text: #333;
+
+    --padding-xxs: 0.2rem;
+    --padding-xs: 0.5rem;
+    --padding-sm: 1rem;
+    --padding-md: 1.5rem;
+    --padding-lg: 3rem;
+    --padding-xl: 5rem;
+
+    --margin-xxs: 0.2rem;
+    --margin-xs: 0.5rem;
+    --margin-sm: 1rem;
+    --margin-md: 1.5rem;
+    --margin-lg: 3rem;
+    --margin-xl: 5rem;
+
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+
+    --font-size-sm: 0.8rem;
+    --font-size: 1rem;
+    --font-size-md: 1.2rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 3rem;
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background: var(--color-accent);
+    accent-color: var(--color-accent);
+}
+
+main {
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    background: var(--color-base);
+    flex: 1 0 auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+main  {
+    color: rgb(76, 135, 190)
+}

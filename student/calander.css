@@ -1,0 +1,182 @@
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex: 1 0 auto;
+}
+
+h1 {
+    flex: 0 0 auto;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    padding-left: 0;
+}
+
+.month-selector {
+    display: flex;
+    box-sizing: content-box;
+    flex-flow: column;
+    flex: 0 0 20%;
+    margin-top: var(--margin-xl);
+    height: fit-content;
+    position: relative;
+    border-top-right-radius: var(--border-radius-lg);
+    border-bottom-right-radius: var(--border-radius-lg);
+    background: var(--color-alt);
+}
+
+.month-selector label {
+    cursor: pointer;
+    padding: var(--padding-md);
+    font-size: 1.2rem;
+    position: inherit;
+    transition: all ease-in-out 0.1s;
+}
+
+.month-selector label.selected {
+    position: relative;
+    cursor: inherit;
+}
+
+.month-selector label:hover:not(label.selected) {
+    background-color: var(--color-accent);
+    color: var(--base);
+}
+
+.month-selector :not(label.selected) {
+    color: var(--color-alt-darkest);
+}
+
+.month-selector input[type="radio"] {
+    visibility: hidden;
+    margin-right: var(--margin-sm);
+}
+
+.month-selector .selected input[type="radio"] {
+    visibility: visible;
+}
+
+.calendar {
+    box-sizing: content-box;
+    flex: 1 0 auto;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+}
+
+.calendar-wrapper {
+    width: 100%;
+}
+
+.calendar caption {
+    order: 0;
+    text-align: start;
+    margin-top: var(--margin-sm);
+    margin-bottom: var(--margin-md);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--font-size-md);
+}
+
+th {
+    font-weight: 300;
+    color: var(--color-accent);
+    text-align: start;
+    padding-bottom: var(--padding-md);
+}
+
+td {
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    vertical-align: top;
+}
+
+td span {
+    z-index: 1;
+    display: inline-block;
+    height: 2.5ch;
+    width: 2.5ch;
+    text-align: center;
+}
+
+td:nth-child(1),
+td:nth-last-child(1) {
+    color: var(--color-alt-darkest);
+}
+
+td.quiz span {
+    color: var(--color-base);
+    background: var(--color-accent);
+    border-radius: 50%;
+}
+
+.lab::after {
+    content: "";
+    height: 0.5ch;
+    width: 0.5ch;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    position: absolute;
+    left: 1ch;
+    top: 2.25ch;
+}
+
+.homework span {
+    border: 1px solid var(--color-accent);
+    border-radius: var(--border-radius-md);
+}
+
+.legend h2 {
+    font-size: var(--font-size);
+}
+
+.legend ul {
+    display: flex;
+    list-style: none;
+    width: 80%;
+    background: #eee;
+    padding: var(--padding-sm) var(--padding-md);
+    border-radius: var(--border-radius-lg);
+    margin-top: var(--margin-xs);
+}
+
+.legend ul li {
+    margin-right: var(--margin-md);
+    color: var(--color-alt-darkest);
+}
+
+.legend ul li span {
+    position: relative;
+    margin-right: var(--margin-xs);
+    z-index: 1;
+    display: inline-block;
+    color: var(--color-text);
+}
+
+.legend ul li span.quiz {
+    color: var(--color-base);
+}
+
+.legend ul .quiz::after {
+    height: 2.5ch;
+    width: 2.5ch;
+    display: inline-block;
+    z-index: -1;
+    text-align: center;
+    left: -0.75ch;
+    top: 0ch;
+    content: "";
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.legend ul .lab::after {
+    left: 1ch;
+}
+
+.office-hours span {
+    border-bottom: 2px solid var(--color-accent);
+}

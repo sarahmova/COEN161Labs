@@ -1,0 +1,55 @@
+nav li a .svg-wrapper { 
+    flex: 0 0 40%;
+    padding-right: var(--padding-sm);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+nav li a .svg-wrapper svg { 
+    flex: 0 0 40%;
+    color: white;
+    height: 32px;
+    }
+
+nav{
+        font-family: Trebuchet MS;
+        flex-basis: 20%;
+        background: var(--main-bg-color);
+        color: #88a3e7;
+        padding: 3rem 1rem;
+    }
+
+nav h1 {
+    accent-color: var(--accent-color);
+    text-align: center;
+    font-weight: 800;
+    font-size: xx-large;
+    padding-bottom: 0.5rem;
+}
+
+nav li {
+    border-bottom: 1px solid rgb(131, 152, 209);
+    list-style: none; 
+}
+
+
+nav li a{
+    padding-top: var(--padding-md);
+    padding-bottom: var(--padding-md);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+nav li:hover {
+    background-color: rgb(130, 171, 238);
+}
+
+nav li span {
+    flex: 1 0 60%; 
+    font-size: 1.2rem; 
+}
