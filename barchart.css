@@ -1,0 +1,65 @@
+
+.container {
+    width: 30vw;
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+.container.flex{
+    display: flex;
+    height: 300px;
+    width: 500px;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color:rgb(198, 230, 198);
+    }
+  
+  .item { 
+    width: 5vw; 
+    border-radius: 2%;
+    background-color: rgb(106, 156, 106);
+    }
+  .item-1 { height: 40%;}
+  .item-2 { height: 50%;}
+  .item-3 { height: 60%;}
+  .item-4 { height: 20%;}
+  .item-5 { height: 30%;}
+
+  .container.pos {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color:rgb(198, 230, 198);
+    }
+
+    .pos .item {
+        position: absolute;
+        align-items: center;
+    }
+
+    .pos .item-1 {
+        left: 1vw;
+        bottom: 40%;
+    }
+
+    .pos .item-2 {
+        left: 7vw;
+        bottom: 40%;
+    }
+
+    .pos .item-3 {
+        left: 13vw;
+        bottom: 40%;
+    }
+
+    .pos .item-4 {
+        left: 19vw;
+        bottom: 40%;
+    }
+
+    .pos .item-5 {
+        left: 25vw;
+        bottom: 40%;
+    }

@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(198, 230, 198);
+  }
+  
+  .item {
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    background-color: rgb(106, 156, 106);
+  }

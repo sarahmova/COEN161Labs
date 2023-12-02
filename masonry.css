@@ -1,0 +1,27 @@
+/* Re-order items into rows */
+.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+
+/* Force new columns */
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+.container {
+    background-color:rgb(198, 230, 198);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 580px;
+    width: 45vw;
+}
+
+.item {
+    border-radius: 2%;
+    background-color: rgb(106, 156, 106);
+}

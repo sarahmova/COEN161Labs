@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    background-color:rgb(198, 230, 198);
+  }
+  
+  .item {
+    flex-grow: 1;
+    height: 100px;
+    border-radius: 2%;
+    background-color: rgb(106, 156, 106);
+  }
+  
+  .item + .item {
+    margin-left: 2%;
+  }

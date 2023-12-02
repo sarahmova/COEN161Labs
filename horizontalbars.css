@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:rgb(198, 230, 198);
+  }
+  
+  .item { 
+    height: 14%; 
+    border-radius: 2%;
+    background-color: rgb(106, 156, 106);
+    }
+  .item-1 { width: 40%; }
+  .item-2 { width: 50%; }
+  .item-3 { width: 60%; }
+  .item-4 { width: 20%; }
+  .item-5 { width: 30%; }

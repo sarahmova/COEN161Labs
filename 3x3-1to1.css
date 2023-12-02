@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:rgb(198, 230, 198);
+  }
+  
+  .item {
+    width: 32%;
+    padding-bottom: 32%; /* Same as width, sets height */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
+    border-radius: 2%;
+    background-color: rgb(106, 156, 106);
+  }

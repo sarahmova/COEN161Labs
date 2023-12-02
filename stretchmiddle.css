@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    background-color: rgb(198, 230, 198);
+  }
+  
+  .item {
+    height: 100px;
+    width: 100px; /* A fixed width as the default */
+    border-radius: 2%;
+    background-color: rgb(106, 156, 106);
+  }
+  
+  .item-center { 
+    flex-grow: 1; /* Set the middle element to grow and stretch */
+  }
+  
+  .item + .item { 
+    margin-left: 2%; 
+  }
